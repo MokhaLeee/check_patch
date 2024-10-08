@@ -7129,6 +7129,7 @@ sub process {
 			}
 		}
 
+=pod
 # check for new externs in .c files.
 		if ($realfile =~ /\.c$/ && defined $stat &&
 		    $stat =~ /^.\s*(?:extern\s+)?$Type\s+($Ident)(\s*)\(/s)
@@ -7172,6 +7173,7 @@ sub process {
 			WARN("AVOID_EXTERNS",
 			     "externs should be avoided in .c files\n" .  $herecurr);
 		}
+=cut
 
 # check for function declarations that have arguments without identifier names
 		if (defined $stat &&
