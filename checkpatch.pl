@@ -3749,6 +3749,7 @@ sub process {
 			}
 		}
 
+=pod
 # check for using SPDX license tag at beginning of files
 		if ($realline == $checklicenseline) {
 			if ($rawline =~ /^[ \+]\s*\#\!\s*\//) {
@@ -3802,6 +3803,7 @@ sub process {
 				}
 			}
 		}
+=cut
 
 # check for embedded filenames
 		if ($rawline =~ /^\+.*\b\Q$realfile\E\b/) {
